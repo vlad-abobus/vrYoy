@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">vrYo</string>
+    <string name="camera_permission_title">Camera Permission Required</string>
+    <string name="camera_permission_message">This app needs camera access for VR pass-through mode.</string>
+    <string name="audio_permission_title">Audio Permission Required</string>
+    <string name="audio_permission_message">This app needs audio access for voice commands.</string>
+    <string name="permission_denied">Permission denied. Some features may not work.</string>
+    <string name="no_camera">Camera not available</string>
+    <string name="connecting_to_youtube">Connecting to YouTube…</string>
+    <string name="voice_command_recognizing">Listening…</string>
+    <string name="voice_command_ready">Voice command ready</string>
+    <string name="controller_hint">Connect a controller or use gaze + dwell (hold 800ms)</string>
+    <string name="mode_camera">Camera Only</string>
+    <string name="mode_camera_youtube">Camera + YouTube</string>
+    <string name="mode_youtube_only">YouTube Only</string>
+    <string name="hud_time">Time: %1$s</string>
+    <string name="hud_battery">Battery: %1$d%%</string>
+    <string name="hud_video">Video: %1$s</string>
+</resources>
+

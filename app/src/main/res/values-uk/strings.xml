@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">vrYo</string>
+    <string name="camera_permission_title">Потрібен дозвіл на камеру</string>
+    <string name="camera_permission_message">Цей додаток потребує доступу до камери для режиму VR pass-through.</string>
+    <string name="audio_permission_title">Потрібен дозвіл на аудіо</string>
+    <string name="audio_permission_message">Цей додаток потребує доступу до аудіо для голосових команд.</string>
+    <string name="permission_denied">Дозвіл відхилено. Деякі функції можуть не працювати.</string>
+    <string name="no_camera">Камера недоступна</string>
+    <string name="connecting_to_youtube">Підключення до YouTube…</string>
+    <string name="voice_command_recognizing">Слухаю…</string>
+    <string name="voice_command_ready">Голосова команда готова</string>
+    <string name="controller_hint">Підключіть контролер або використайте gaze + dwell (утримати 800мс)</string>
+    <string name="mode_camera">Тільки камера</string>
+    <string name="mode_camera_youtube">Камера + YouTube</string>
+    <string name="mode_youtube_only">Тільки YouTube</string>
+    <string name="hud_time">Час: %1$s</string>
+    <string name="hud_battery">Батарея: %1$d%%</string>
+    <string name="hud_video">Відео: %1$s</string>
+</resources>
+

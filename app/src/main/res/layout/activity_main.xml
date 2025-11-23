@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <!-- Camera Preview Container (split for left/right eye) -->
+    <FrameLayout
+        android:id="@+id/cameraContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Overlay Container for 3D windows -->
+    <FrameLayout
+        android:id="@+id/overlayContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- HUD Overlay -->
+    <LinearLayout
+        android:id="@+id/hudContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#80000000"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/hudTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:text="Time: --:--" />
+
+        <TextView
+            android:id="@+id/hudBattery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:text="Battery: --%" />
+
+        <TextView
+            android:id="@+id/hudVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Video: --" />
+    </LinearLayout>
+
+    <!-- Gaze Indicator (crosshair) -->
+    <View
+        android:id="@+id/gazeIndicator"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:alpha="0.7f" />
+
+    <!-- Status Messages -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:background="#CC000000"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <!-- Controller Hint -->
+    <TextView
+        android:id="@+id/controllerHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:background="#80000000"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:text="@string/controller_hint"
+        android:visibility="gone" />
+
+</FrameLayout>
+
